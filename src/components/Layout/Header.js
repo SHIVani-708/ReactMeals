@@ -3,12 +3,12 @@ import mealsImage from "../../asset/meals.jpg";
 import { Fragment } from "react";
 import CartButton from "./CartButton";
 
-export default function Header() {
+export default function Header(props) {
   return (
     <Fragment>
       <div className="header">
         <h1>ReactMeals</h1>
-        <CartButton/>
+        <CartButton onClick={props.onShowCart}/>
       </div>
       <div className="container">
         <div className="image-container">
