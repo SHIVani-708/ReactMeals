@@ -1,10 +1,13 @@
 import React from 'react';
-import Header from './Cart/Header';
-
+import Header from './components/Cart/Header';
+import Meals from './components/Meals/Meals';
 function App() {
   return (
     <div>
       <Header/>
+      <main>
+        <Meals/>
+      </main>
     </div>
   );
 }
